@@ -1,0 +1,10 @@
+
+.article-preview picture img{
+    width: clamp(200px, 300px, 400px);
+    height: clamp(190px, 200px, 250px);
+}
+
+.article-preview-footer__visible picture img{
+    width: clamp(40px, 50px, 70px);
+    border-radius: 100vmax;
+}
