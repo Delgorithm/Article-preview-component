@@ -2,6 +2,7 @@
 .article-preview picture img{
     width: clamp(200px, 300px, 400px);
     height: clamp(190px, 200px, 250px);
+    width: 100%;
 }
 
 .article-preview-footer__visible picture img{

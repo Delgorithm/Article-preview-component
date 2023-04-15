@@ -54,10 +54,12 @@ main{
     align-items: center;
     justify-content: space-between;
     padding: 2rem;
+    height: 2rem;
 }
 
 /* ------- Profil picture ----- */
 .article-preview-footer__visible{
+    
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -90,7 +92,6 @@ main{
 
 /* --------- Profil picture ------- */
 .delgorithm-profil{
-    /* display: none; */
     position: absolute;
     transform: translateX(-50px);
     transform-style: preserve-3d;
@@ -107,12 +108,6 @@ main{
     align-items: center;
 }
 
-/* .article-preview-footer{
-    background-color: var(--clr-dark-grayish-blue);
-    height: 2rem;
-}
-
-
 .article-preview-footer__hidden picture a{
     margin-left: 1rem;
 }
@@ -123,4 +118,3 @@ main{
     font-weight: 500;
     letter-spacing: 0.6rem;
 }
- */
