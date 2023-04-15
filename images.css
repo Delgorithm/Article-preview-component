@@ -7,4 +7,9 @@
 .article-preview-footer__visible picture img{
     width: clamp(40px, 50px, 70px);
     border-radius: 100vmax;
+    cursor: pointer;
+}
+
+.article-preview-footer__visible picture img:hover{
+    transform: rotateY(180deg);
 }
