@@ -11,27 +11,44 @@
     box-sizing: border-box;
     list-style-type: none;
     font-size: 13px;
+    font-family: 'Manrope', sans-serif;
+    transition-duration: 350ms;
 }
 
 body{
     height: 100svh;
     display: grid;
-    place-content: center;
+    place-content: center;  
     background-color: var(--clr-light-grayish-blue);
 }
 
 main{
     background-color: white;
-    margin: 2.5rem;
+    margin: 3rem;
     border-radius: 2vmax;
     overflow: hidden;
 }
 
-.article-preview h1,
-.article-preview p{
-    padding: 2rem;
+/* --------------------------------------------------------------- */
+
+/* ----------------- Text ----------------- */
+
+.article-preview h1{
+    font-size: 1.2em;
+    font-weight: 700;
+    color: var(--clr-dark-grayish-blue);
+    padding: 2rem 2rem 0rem 2rem;
 }
 
+.article-preview p{
+    font-size: 0.95em;
+    font-weight: 500;
+    color: var(--clr-desaturated-dark-blue);
+    padding: 1rem 2rem 1rem 2rem;
+}
+
+
+/* ------- Sharing links ----- */
 .article-preview-footer{
     display: flex;
     align-items: center;
@@ -39,12 +56,71 @@ main{
     padding: 2rem;
 }
 
+/* ------- Profil picture ----- */
 .article-preview-footer__visible{
     display: flex;
     align-items: center;
     gap: 1rem;
+    perspective-origin: 2000px;
 }
+
+.article-preview-footer__visible p{
+    font-size: 1em;
+    font-weight: 700;
+    color: var(--clr-dark-grayish-blue);
+    cursor: pointer;
+}
+
+
+.article-preview-footer__visible p span{
+    font-weight: 500;
+    color: var(--clr-desaturated-dark-blue);
+}
+
+.icon-share img{
+    position: relative;
+    padding: 0.595rem;
+    background-color: var(--clr-light-grayish-blue);
+    border-radius: 100vmax;
+}
+
+.icon-share img:hover{
+    background-color: var(--clr-grayish-blue);
+}
+
+/* --------- Profil picture ------- */
+.delgorithm-profil{
+    /* display: none; */
+    position: absolute;
+    transform: translateX(-50px);
+    transform-style: preserve-3d;
+    transition: transform 1s cubic-bezier(0.86, 0, 0.07, 1);
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+/* ----------------- Hidden part : SHARE ----------------- */
+
 
 .article-preview-footer__hidden{
     display: none;
+    align-items: center;
 }
+
+/* .article-preview-footer{
+    background-color: var(--clr-dark-grayish-blue);
+    height: 2rem;
+}
+
+
+.article-preview-footer__hidden picture a{
+    margin-left: 1rem;
+}
+
+.article-preview-footer__hidden p{
+    font-size: 1.2em;
+    color: var(--clr-desaturated-dark-blue);
+    font-weight: 500;
+    letter-spacing: 0.6rem;
+}
+ */
