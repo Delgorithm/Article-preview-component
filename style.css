@@ -118,3 +118,11 @@ main{
     font-weight: 500;
     letter-spacing: 0.6rem;
 }
+
+/* ==================== Media Queries : 1440px ===================== */
+
+@media (min-width: 768px) {
+    .article-preview picture img{
+        display: grid;
+    }
+}

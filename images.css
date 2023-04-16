@@ -14,3 +14,11 @@
 .article-preview-footer__visible picture img:hover{
     transform: rotateY(180deg);
 }
+
+/* ==================== Media Queries : 1440px ===================== */
+@media (min-width: 768px) {
+    .article-preview picture img{
+        width: 400px;
+        height: 250px;
+    }
+}
