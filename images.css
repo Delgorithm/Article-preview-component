@@ -1,5 +1,5 @@
 
-.article-preview picture img{
+.img-background img{
     width: clamp(200px, 300px, 400px);
     height: clamp(190px, 200px, 250px);
     width: 100%;
@@ -17,8 +17,8 @@
 
 /* ==================== Media Queries : 1440px ===================== */
 @media (min-width: 768px) {
-    .article-preview picture img{
-        width: 400px;
-        height: 250px;
+    .img-background img{
+        width: 350px;
+        height: 300px;
     }
 }

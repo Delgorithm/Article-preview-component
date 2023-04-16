@@ -119,10 +119,27 @@ main{
     letter-spacing: 0.6rem;
 }
 
-/* ==================== Media Queries : 1440px ===================== */
+/* ==================== Media Queries : 768px ===================== */
 
-@media (min-width: 768px) {
+@media (min-width: 768px) { 
+    main{
+        display: flex;
+    }
     .article-preview picture img{
         display: grid;
+    }
+
+    .text{
+        display: grid;
+        place-content: center;
+    }
+}
+
+/* ==================== Media Queries : 1440px ===================== */
+
+@media (min-width: 1440px) { 
+    main{
+        display: flex;
+        width: 60vmax;
     }
 }
